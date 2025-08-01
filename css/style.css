@@ -498,6 +498,12 @@ p {
     margin: 0;
 }
 
+@media (max-width: 767px) {
+    .producto-titulo {
+        font-size: 12px;
+    }
+}
+
 .producto-icon {
   font-size: 20px;
   transition: transform 0.3s ease;
