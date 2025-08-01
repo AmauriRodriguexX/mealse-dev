@@ -220,7 +220,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #04b2a6;
+  background-color: #04B2A5;
   opacity: 0.74;
   /* Puedes ajustarlo */
   z-index: 0;
@@ -325,7 +325,7 @@ p {
 /* MARK: Estilos cards */
 
 .card-mv {
-  background-color: #00afaa;
+  background-color: #04B2A5;
   color: white;
   padding: 40px 24px;
   border-radius: 12px;
@@ -468,3 +468,99 @@ p {
   }
 }
 
+/* MARK: productos */
+.producto-card {
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.producto-img {
+  transition: transform 0.4s ease;
+}
+.producto-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(4, 178, 165, 0.74);
+  padding: 16px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.producto-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.producto-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover .producto-icon {
+  transform: rotate(-30deg);
+}
+
+.producto-card:hover .producto-img {
+  transform: scale(1.05);
+}
+
+/* MARK: modales */
+/* Imagen circular tipo avatar */
+.avatar-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Cerrar con PNG en la esquina superior derecha */
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 10;
+}
+
+/* Lista de productos en columnas */
+.producto-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.producto-list li::before {
+  content: "•";
+  color: #04B2A5;
+  font-weight: bold;
+  font-size: 28px;
+  display: inline-block;
+  width: 20px !important;
+  margin-left: 0;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 642px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.rounded-16 {
+    border-radius:16px !important;
+}

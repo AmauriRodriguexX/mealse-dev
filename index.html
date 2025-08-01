@@ -15,6 +15,9 @@
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
           rel="stylesheet">
 
+     <!-- Google Material Icons (en tu <head>) -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -97,7 +100,7 @@
                </div>
           </section>
 
-          <section id="section2" class="quienes-somos-section py-20 bg-grey-01 ">
+          <section id="section2" class="quienes-somos-section py-20 bg-grey-01">
                <div class="container">
                     <div class="row align-items-center">
 
@@ -125,7 +128,7 @@
                </div>
           </section>
 
-          <section id="section3" class="py-20 bg-white">
+          <section class="py-20 bg-white">
                <div class="container">
                     <div class="row g-4">
 
@@ -166,7 +169,7 @@
                </div>
           </section>
 
-          <section id="section4" class="py-20 valores-section">
+          <section id="section3" class="py-20 valores-section">
                <div class="container">
                     <div class="valor-block mb-4">
                          <h2>Nuestros valores</h2>
@@ -198,7 +201,8 @@
                                    </li>
                                    <li class="nav-item" role="presentation">
                                         <button class="nav-link   " id="valores-tab-4" data-bs-toggle="pill"
-                                             data-bs-target="#valor4" type="button" role="tab" style="margin-right: 8px;">
+                                             data-bs-target="#valor4" type="button" role="tab"
+                                             style="margin-right: 8px;">
                                              Integridad
                                         </button>
                                    </li>
@@ -306,6 +310,575 @@
                     </div>
                </div>
           </section>
+
+          <section id="section4" class="productos-section py-20 bg-grey-01">
+               <div class="container">
+                    <!-- Título -->
+                    <div class="text-center mb-4">
+                         <h2>Nuestros productos</h2>
+                         <img src="assets/line.svg" alt="Decoración línea naranja" width="100" />
+                    </div>
+
+                    <!-- Grid de productos -->
+                    <div class="row g-3">
+                         <!-- Card Producto -->
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#modalIluminacion">
+                                   <img src="assets/iluminacion.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Iluminación</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#artefactosElectricos">
+                                   <img src="assets/artefactos-electricos.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Artefactos eléctricos</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#tuberiaAccesorios">
+                                   <img src="assets/tuberia-y-accesorios.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Tubería y accesorios</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#distribucion">
+                                   <img src="assets/distribucion.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Distribución</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#conductores">
+                                   <img src="assets/conductores.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Conductores</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#soporteria">
+                                   <img src="assets/soporteria.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Soportería</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#artefactosComplementos">
+                                   <img src="assets/accesorios-y-complementos.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Accesorios y complementos</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#ferreteria">
+                                   <img src="assets/ferreteria.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Ferretería</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#equipoSeguridad">
+                                   <img src="assets/equipo-de-seguridad.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Equipo de seguridad</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#equiposControl">
+                                   <img src="assets/equipos-de-control.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Equipos de control</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#bajaMediaAltaTension">
+                                   <img src="assets/baja-media-alta-tension.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Baja, media y alta tensión</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-6 col-md-4 col-lg-3">
+                              <div class="producto-card position-relative overflow-hidden rounded-16"
+                                   data-bs-toggle="modal" data-bs-target="#servicios">
+                                   <img src="assets/servicios.jpg" alt="Iluminación"
+                                        class="producto-img w-100 h-100 object-fit-cover" />
+                                   <div class="producto-overlay d-flex justify-content-between">
+                                        <span class="producto-titulo">Servicios</span>
+                                        <span class="material-icons producto-icon">arrow_forward</span>
+                                   </div>
+                              </div>
+                         </div>
+
+
+                    </div>
+               </div>
+          </section>
+
+          <!-- Modal Iluminación -->
+          <div class="modal fade" id="modalIluminacion" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/iluminacion.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Iluminación</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Focos</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Tiras LED</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Lámparas (Halógeno, Fluorescentes)</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Reflectores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Lámparas de alumbrado público</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Spot</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Lámparas decorativas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Tubos LED</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Luminarias</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Proyectores</p></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Artefactos eléctricos -->
+          <div class="modal fade" id="artefactosElectricos" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/artefactos-electricos.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Artefactos eléctricos</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Toma corriente, bifásico, trifásico etc.</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Arrancadores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Pastillas</p></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Tubería y accesorios -->
+          <div class="modal fade" id="tuberiaAccesorios" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/tuberia-y-accesorios.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Tubería y accesorios</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Abrazaderas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Tubería pared delgada</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Codos</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Conectores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Coples</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Poliducto</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Tubería metálica flexible</p></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Distribución -->
+          <div class="modal fade" id="distribucion" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/distribucion.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Distribución</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Centros de carga</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Interruptores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Tableros de distribución</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Gabinetes metálicos</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Registros metálicos y concreto</p></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Conductores -->
+          <div class="modal fade" id="conductores" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/conductores.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Conductores</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cable THW-LS</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cable uso rudo</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cable dúplex</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cable control</p></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Soportería -->
+          <div class="modal fade" id="soporteria" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/soporteria.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Soportería</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Charolas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Canaletas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Riel DIN</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Curvas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cadenas oruga</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Plogas</p></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Accesorios y complementos -->
+          <div class="modal fade" id="artefactosComplementos" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/accesorios-y-complementos.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Accesorios y complementos</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Perfil unicanal</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Condulets</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cajas y tapas metálicas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Contratuercas y monitores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Clavijas y conectores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Contactos y apagadores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Tapas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Placas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Timbres</p></li>
+                              </ul>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Ferretería -->
+          <div class="modal fade" id="ferreteria" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/ferreteria.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Ferretería</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Herramientas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Taladros</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Esmeriladora</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Pulidores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Escaleras</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Tornillería</p></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Equipo de seguridad -->
+          <div class="modal fade" id="equipoSeguridad" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/equipo-de-seguridad.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Equipo de seguridad</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cintas aislantes</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Extensiones eléctricas</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Equipo de seguridad</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Desarmadores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Herramientas para la construcción</p></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Equipos de control -->
+          <div class="modal fade" id="equiposControl" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/equipos-de-control.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Equipos de control</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Transformadores de control</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Botonería</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Equipo de seguridad</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Multímetros</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Conectores</p></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal Baja, media y alta tensión -->
+          <div class="modal fade" id="bajaMediaAltaTension" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/baja-media-alta-tension.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Baja, media y alta tensión</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Apartarrayos</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Transformadores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Cortacircuitos</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Aisladores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Insertos</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Codos</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Adaptadores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Indicadores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Terminales</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Seccionadores y restauradores</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Postes concreto, metálicos y madera</p></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Modal servicios-->
+          <div class="modal fade" id="servicios" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-4 p-4">
+
+                         <!-- Cierre manual con PNG -->
+                         <button type="button" class="modal-close-btn mb-5 p-4" data-bs-dismiss="modal" aria-label="Cerrar">
+                              <img src="assets/close.png" alt="Cerrar" width="24" height="24" />
+                         </button>
+                         <br>
+
+                         <!-- Contenido del modal -->
+                         <div class="modal-header border-0 d-block text-start p-0 mb-3 mt-5">
+                              <img src="assets/servicios.jpg" alt="Iluminación" class="avatar-img mb-3" />
+                              <h5 class="modal-title">Servicios</h5>
+                              <img src="assets/line.svg" alt="Decoración línea" width="60" />
+                         </div>
+
+                         <!-- Lista en dos columnas -->
+                         <div class="modal-body p-0">
+                              <ul class="producto-list row row-cols-1 row-cols-sm-2 gy-2 gx-3">
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Instalaciones eléctricas </p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Plomería </p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Pintura</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Mantenimiento general </p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Soldadura</p></li>
+                                   <li class="col d-flex align-items-center"><p class="no-margin">Limpieza y Remodelación</p></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
 
 
 
