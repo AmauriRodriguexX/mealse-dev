@@ -106,7 +106,7 @@ h1 {
 
 @media (max-width: 767px) {
      .hero-section {
-          margin-top: 40px;
+          margin-top: 60px;
           position: relative;
           min-height: 60vh;
           background: url('../assets/maelse-soluciones.jpg') center center / cover no-repeat;
