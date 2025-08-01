@@ -134,7 +134,7 @@ p {
 
 .tab-text {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0px;
   line-height: 32px;
@@ -456,5 +456,15 @@ p {
 .valores-section h4 {
   font-weight: 600;
   margin-bottom: 12px;
+}
+
+.valor-block {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .valor-block {
+    text-align: center;
+  }
 }
 
