@@ -84,7 +84,8 @@
      </header>
 
      <main>
-          <section class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+          <section id="section1"
+               class="hero-section text-white text-center d-flex align-items-center justify-content-center">
                <div class="overlay"></div>
                <div class="container position-relative z-1">
                     <h1 class="fw-bold mb-3">Soluciones eléctricas con<br>experiencia y confianza</h1>
@@ -95,13 +96,151 @@
 
                </div>
           </section>
+
+          <section id="section2" class="quienes-somos-section py-20 bg-grey-01 ">
+               <div class="container">
+                    <div class="row align-items-center">
+
+                         <!-- Imagen primero (desktop) -->
+                         <div class="col-lg-6 order-2 order-lg-1">
+                              <img src="../assets/maelse-quienes-somos.jpg" alt="Técnico eléctrico"
+                                   class="img-fluid rounded-4" />
+                         </div>
+
+                         <!-- Texto después (desktop) -->
+                         <div class="col-lg-6 pd-l-50 order-1 order-lg-2 mt-4 mt-lg-0">
+                              <h2 class="mb-2">Quiénes Somos</h2>
+                              <div class="svg-line mb-3">
+                                   <img src="assets/line.svg" alt="Decoración línea naranja" />
+                              </div>
+                              <p class="bottom-image">En<strong> MAELSE</strong> contamos con más de 20 años de
+                                   experiencia ofreciendo
+                                   soluciones eléctricas confiables.
+                                   Combinamos calidad, innovación y compromiso para impulsar proyectos seguros y
+                                   eficientes en hogares, empresas e industria.
+                              </p>
+                         </div>
+
+                    </div>
+               </div>
+          </section>
+
+          <section id="section3" class="py-20 bg-white">
+               <div class="container">
+                    <div class="row g-4">
+
+                         <!-- Misión -->
+                         <div class="col-md-6">
+                              <div class="card-mv text-center text-md-start">
+                                   <img src="assets/mision.png" alt="Ícono misión" class="icono-mv mb-3" />
+                                   <h3 class="titulo-mv">Nuestra misión</h3>
+                                   <div class="svg-line">
+                                        <img src="assets/line.svg" alt="Decoración línea naranja" />
+                                   </div>
+                                   <p class="descripcion-mv">
+                                        Satisfacer las necesidades de nuestros clientes, ofreciendo los mejores
+                                        productos y servicios de alta calidad, garantizando la seguridad y eficiencia en
+                                        sus instalaciones eléctricas.
+                                   </p>
+                              </div>
+                         </div>
+
+                         <!-- Visión -->
+                         <div class="col-md-6">
+                              <div class="card-mv text-center text-md-start">
+                                   <img src="assets/vision.png" alt="Ícono visión" class="icono-mv mb-3" />
+                                   <h3 class="titulo-mv">Nuestra visión</h3>
+                                   <div class="svg-line">
+                                        <img src="assets/line.svg" alt="Decoración línea naranja" />
+                                   </div>
+                                   <p class="descripcion-mv">
+                                        Ser una empresa líder en el mercado nacional por la calidad, innovación y
+                                        sostenibilidad de nuestros productos y servicios, brindando soluciones
+                                        integrales en material eléctrico que superen las expectativas de nuestros
+                                        clientes y contribuyan al desarrollo del sector.
+                                   </p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+          </section>
+
+          <section id="section4" class="valores-section py-5">
+               <div class="container">
+                    <div class="text-center mb-4">
+                         <h2>Nuestros valores</h2>
+                         <div class="svg-line">
+                              <img src="assets/line.svg" alt="Decoración línea naranja" />
+                         </div>
+                    </div>
+
+                    <!-- Tabs deslizables en mobile -->
+                    <div class="tab-wrapper mb-5 d-flex justify-content-center">
+                         <div class="tab-container rounded-pill shadow-sm px-3 py-2 overflow-auto">
+                              <ul class="nav nav-pills d-flex flex-nowrap gap-2" id="valoresTabs" role="tablist">
+                                   <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="valores-tab-1" data-bs-toggle="pill"
+                                             data-bs-target="#valor1" type="button" role="tab">
+                                             Orientación al cliente
+                                        </button>
+                                   </li>
+                                   <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="valores-tab-2" data-bs-toggle="pill"
+                                             data-bs-target="#valor2" type="button" role="tab">
+                                             Calidad
+                                        </button>
+                                   </li>
+                                   <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="valores-tab-3" data-bs-toggle="pill"
+                                             data-bs-target="#valor3" type="button" role="tab">
+                                             Innovación
+                                        </button>
+                                   </li>
+                                   <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="valores-tab-4" data-bs-toggle="pill"
+                                             data-bs-target="#valor4" type="button" role="tab">
+                                             Integridad
+                                        </button>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+
+
+                    <!-- Contenido de tabs -->
+                    <div class="tab-content" id="valoresTabsContent">
+                         <div class="tab-pane fade show active" id="valor1" role="tabpanel">
+                              <div class="row align-items-center flex-column flex-lg-row">
+                                   <!-- Imagen primero en mobile -->
+                                   <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+                                        <img src="assets/orientacion-al-cliente.jpg" alt="Imagen valor"
+                                             class="img-fluid rounded-4 w-100" />
+                                   </div>
+                                   <!-- Texto primero en desktop -->
+                                   <div class="col-lg-6 order-2 order-lg-1">
+                                        <h4>Orientación al cliente</h4>
+                                        <p class="tab-text ">
+                                             Priorizar las necesidades y expectativas de nuestros clientes,
+                                             ofreciendo productos y servicios que satisfagan sus demandas
+                                             y superen sus expectativas.
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <!-- Agrega más tabs aquí si los necesitas -->
+
+                    </div>
+               </div>
+          </section>
+
+
+
+
+
+
      </main>
-
-
-
-
-
-
      <script src="js/bootstrap.min.js"></script>
 </body>
 
