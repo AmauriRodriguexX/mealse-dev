@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;       /* para que todos los saltos sean suaves */
+  scroll-padding-top: 70px;      /* espacio reservado debajo del header al hacer scroll a un ancla */
+}
+
+/* Además, para asegurarnos de que cada sección con id respete ese margen: */
+[id] {
+  scroll-margin-top: 70px;
+}
+
+
 /* Reset */
 * {
   margin: 0;
@@ -175,6 +186,11 @@ p {
 .navbar .nav-link:hover {
   color: #F39200;
   /* ejemplo: un rosa corporativo */
+}
+
+.link-mb-1 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
 }
 
 
@@ -636,6 +652,7 @@ p {
   display: flex;
   align-items: center;
   font-size: 14px !important;
+  line-height: 24px !important;
   font-weight: 600 !important;
   text-align: left !important;
 }
