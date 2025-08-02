@@ -1,73 +1,52 @@
 document.addEventListener('DOMContentLoaded', () => {
-  new Swiper('.marcas-swiper', {
-    loop: true,
-    autoplay: {
-      delay: 7000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    allowTouchMove: true,
-  });
-});
-
-
-//MARK: close sidenav
-
-document.addEventListener('DOMContentLoaded', function() {
-    const offcanvasEl = document.getElementById('mainOffcanvas');
-    // Crea o recupera la instancia de Bootstrap Offcanvas
-    const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
-
-    offcanvasEl.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();                  // 1) evita el salto inmediato
-        const targetHash = this.getAttribute('href');
-
-        // 2) cuando termine de ocultarse, hacemos scroll
-        const onHidden = () => {
-          const targetEl = document.querySelector(targetHash);
-          if (targetEl) {
-            targetEl.scrollIntoView({ behavior: 'smooth' });
-            // opcional: actualiza el hash en la URL sin forzar otro salto
-            history.replaceState(null, '', targetHash);
-          }
-          offcanvasEl.removeEventListener('hidden.bs.offcanvas', onHidden);
-        };
-        offcanvasEl.addEventListener('hidden.bs.offcanvas', onHidden);
-
-        // 3) cierra el Offcanvas
-        bsOffcanvas.hide();
-      });
+    // 1) Inicializa tu Swiper
+    new Swiper('.marcas-swiper', {
+      loop: true,
+      autoplay: { delay: 7000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      allowTouchMove: true,
     });
-  });
 
-//MARK: smooth scroll to section
-document.addEventListener('DOMContentLoaded', function() {
+    // 2) Prepara Offcanvas + Smooth Scroll con offset fijo
     const offcanvasEl = document.getElementById('mainOffcanvas');
     const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
-    const OFFSET = 70; // píxeles que quieres “ahorrar” arriba
+    const OFFSET = 70; // px que dejamos libre bajo el header
 
     offcanvasEl.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', function(e) {
+      link.addEventListener('click', e => {
         e.preventDefault();
-        const targetHash = this.getAttribute('href');
+        const targetHash = link.getAttribute('href');
 
+        // Esperar a que termine de cerrar
         const onHidden = () => {
           const targetEl = document.querySelector(targetHash);
           if (targetEl) {
-            const elementTop = targetEl.getBoundingClientRect().top + window.pageYOffset;
-            // Restamos siempre 70px en lugar de la altura dinámica
-            window.scrollTo({ top: elementTop - OFFSET, behavior: 'smooth' });
+            // Calcula la posición real menos OFFSET
+            const top = targetEl.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+            window.scrollTo({ top, behavior: 'smooth' });
             history.replaceState(null, '', targetHash);
           }
           offcanvasEl.removeEventListener('hidden.bs.offcanvas', onHidden);
         };
-
         offcanvasEl.addEventListener('hidden.bs.offcanvas', onHidden);
+
+        // Cierra el menú
         bsOffcanvas.hide();
       });
     });
+  });
+
+  // 3) Corrige el auto-scroll inicial si la URL trae #sectionX
+  window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    const OFFSET = 70;
+    if (hash) {
+      const targetEl = document.querySelector(hash);
+      if (targetEl) {
+        const top = targetEl.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+        window.scrollTo({ top, behavior: 'auto' });
+        // Si quieres limpiar el hash de la URL:
+        // history.replaceState(null, '', window.location.pathname);
+      }
+    }
   });
