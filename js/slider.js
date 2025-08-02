@@ -41,12 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const hash = window.location.hash;
     const OFFSET = 70;
     if (hash) {
-      const targetEl = document.querySelector(hash);
-      if (targetEl) {
-        const top = targetEl.getBoundingClientRect().top + window.pageYOffset - OFFSET;
-        window.scrollTo({ top, behavior: 'auto' });
-        // Si quieres limpiar el hash de la URL:
-        // history.replaceState(null, '', window.location.pathname);
-      }
+        const targetEl = document.querySelector(hash);
+        if (targetEl) {
+            const top = targetEl.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+            window.scrollTo({ top, behavior: 'auto' });
+            
+            // <-- DESCOMENTA ESTA LÍNEA -->
+            history.replaceState(null, '', window.location.pathname);
+        }
     }
-  });
+});
